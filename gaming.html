@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GamingZunft</title>
+    <link rel="stylesheet" href="gaming.css">
+    <script src="gaming.js" defer></script>
+    <link rel="icon" href="gazu.jpg" type="image/x-icon">
+</head>
+<body class="fade-in">
+    <div class="container">
+        <header>
+            <h1>WILLKOMMEN IN DER GAMINGZUNFT!</h1>
+            <p>Der Multigaming-Clan seit 2020, herzlich willkommen!</p>
+            <a href="index.html" class="home-button">Zurück zur Startseite</a>
+        </header>
+
+        <br>
+        <br>
+        <br>
+
+
+        <div class="uebertext">
+            <h2>Über uns!</h2>
+            <P>GamingZunft, der Multigaming-Clan seit 2020. Wir sind eine eingeschweißte Community, die Spaß am Zocken hat und vieles zu bieten hat. Unter anderem bieten wir eigene Gameserver, einen eigenen TS3-Server, eine aktive und freundliche Community, casual- und competetive fokussierte Spieler, die verschiedensten Community-Events und vieles mehr!
+                <br>
+                <br>
+            Mittlerweile feiern wir bereits dieses Jahr unser fünfjähriges Jubiläum! Fünf Jahre voller Freude und Emotionen. Wir freuen uns bereits auf viele weitere tolle Jahre mit unserer Community!</br>
+                <br>
+                <br>
+                <h2>Unsere Community</h2>
+                
+            <p>Unsere Community ist hauptsächlich aus dem DACH-Raum (Deutschland, Österreich, Schweiz) und umfasst mittlerweile über 70 aktive Mitglieder! Für weitere Informationen besuche doch unsere anderen Social Media Kanäle über die Buttons ganz unten! Viel Spaß!
+            <br>
+            <Br>
+            </P>
+        </div>
+
+        <!-- Slideshow Sektion -->
+        <section class="slideshow-container">
+
+            <br>
+            <br>
+            <a href="javascript:void(0)" id="toggle-link" onclick="toggleIP()" class="button">Klicke hier, um die Teamspeak-IP anzuzeigen</a>
+            <div id="teamspeak-ip" class="ip-container">
+                <p>Die Teamspeak-IP lautet: gamingzunft.server4voice.de</p>
+            </div>
+            <br>
+            <br>
+            <Br>
+
+            <div class="slideshow-wrapper">
+                <div class="slide"><img src="sot.jpg" alt="Bild 1"></div>
+                <div class="slide"><img src="ets.jpg" alt="Bild 2"></div>
+                <div class="slide"><img src="narak.jpg" alt="Bild 3"></div>
+                <div class="slide"><img src="diab.jpg" alt="Bild 4"></div>
+                <div class="slide"><img src="narak2.jpg" alt="Bild 4"></div>
+                <div class="slide"><img src="contb.jpg" alt="Bild 4"></div>
+            </div>
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </section>
+
+            <br>
+            <br>
+            <br>
+
+        <div class="untertext">
+            <h2>Unsere Social Media Accounts:</h2>
+            <p>Besuche einfach unsere Accounts, indem du auf die Buttons klickst. Viel Spaß!</p>
+            
+            <div class="social-buttons">
+                <a href="https://steamcommunity.com/groups/gamingzunft" target="_blank">
+                    <img src="steam.png" alt="Steam" class="social-icon">
+                </a>
+                <a href="https://www.youtube.com/@gamingzunft8435" target="_blank">
+                    <img src="yt.png" alt="YouTube" class="social-icon">
+                </a>
+                <a href="https://www.instagram.com/gamingzunft/" target="_blank">
+                    <img src="ig.png" alt="Instagram" class="social-icon">
+                </a>
+                <a href="https://discord.gg/jy9CMnSp" target="_blank">
+                    <img src="dc.png" alt="Discord" class="social-icon">
+                </a>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 GamingZunft. Alle Rechte vorbehalten.</p>
+        </footer>
+    </div>
+
+    <script>
+        let slideIndex = 0;
+        function showSlides() {
+            let slides = document.querySelectorAll(".slide");
+            slides.forEach((slide, index) => {
+                slide.style.transform = `translateX(${-slideIndex * 100}%)`;
+            });
+        }
+        function moveSlide(step) {
+            let slides = document.querySelectorAll(".slide");
+            slideIndex = (slideIndex + step + slides.length) % slides.length;
+            showSlides();
+        }
+        setInterval(() => moveSlide(1), 3000);
+    </script>
+</body>
+</html>

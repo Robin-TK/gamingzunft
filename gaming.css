@@ -1,0 +1,231 @@
+/* CSS Datei */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+    background: #323232;
+    font-family: 'Roboto', Arial, sans-serif;
+    color: white;
+}
+
+/* Styling für den 'Über uns'-Text */
+.uebertext {
+    padding: 20px 100px; /* Seitenabstand (oben/unten: 20px, links/rechts: 40px) */
+    margin: 40px auto; /* Abstand nach oben und unten, zentriert auf der Seite */
+    max-width: 600px; /* Maximale Breite für den Text */
+    background-color: #242424; /* Hintergrundfarbe für den Textbereich */
+    color: white; /* Textfarbe */
+    border-radius: 10px; /* Abgerundete Ecken */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Schatten für den Textbereich */
+    text-align: justify; /* Text Blocksatz */
+}
+
+.uebertext h2 {
+    font-size: 2rem; /* Schriftgröße für den Titel */
+    margin-bottom: 15px; /* Abstand unter dem Titel */
+    font-weight: bold; /* Fettgedruckt */
+}
+
+.uebertext p {
+    font-size: 1.1rem; /* Schriftgröße für den Paragraphen */
+    line-height: 1.6; /* Zeilenhöhe für bessere Lesbarkeit */
+    margin-top: 10px; /* Abstand oben für den Paragraphen */
+}
+
+/* Button-Stil für den Link */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #242424; /* Blau */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+}
+
+/* Hover-Effekt für den Button */
+.button:hover {
+    background-color: #323232; /* Dunkleres Blau */
+}
+
+/* Optional: Fokus-Stil für Barrierefreiheit */
+.button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px #242424;
+}
+
+/* IP Container, der standardmäßig versteckt ist */
+.ip-container {
+    max-height: 0; /* Anfangshöhe 0, um es zu verstecken */
+    overflow: hidden; /* Verhindert das Zeigen von Inhalt außerhalb der Containerhöhe */
+    transition: max-height 0.5s ease-in-out; /* Übergang für die Dropdown-Animation */
+}
+
+/* IP-Inhalt */
+.ip-container p {
+    margin: 10px 0;
+    padding: 10px 20px;
+    background-color: #323232;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+/* Styling für den Untertext Bereich */
+.untertext {
+    padding: 20px 40px; /* Abstand für den Textbereich */
+    margin: 40px auto; /* Abstand nach oben und unten, zentriert auf der Seite */
+    max-width: 600px; /* Maximale Breite für den Text */
+    background-color: #242424; /* Hintergrundfarbe für den Textbereich */
+    color: white; /* Textfarbe */
+    border-radius: 10px; /* Abgerundete Ecken */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Schatten für den Textbereich */
+    text-align: justify; /* Text zentrieren */
+}
+
+.untertext h2 {
+    font-size: 2rem; /* Schriftgröße für den Titel */
+    margin-bottom: 15px; /* Abstand unter dem Titel */
+    font-weight: bold; /* Fettgedruckt */
+}
+
+.untertext p {
+    font-size: 1.1rem; /* Schriftgröße für den Paragraphen */
+    line-height: 1.6; /* Zeilenhöhe für bessere Lesbarkeit */
+    margin-top: 10px; /* Abstand oben für den Paragraphen */
+}
+
+/* Styling für die Social Media Buttons */
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px; /* Abstand nach oben */
+}
+
+.social-icon {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+header {
+    background-color: #242424;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.social-media {
+    padding: 70px 50px;
+    text-align: center;
+    background-color: #323232;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.social-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+footer {
+    background-color: #242424;
+    width: 100%;
+    color: #bbb;
+    padding: 20px 0;
+}
+
+.home-button {
+    position: absolute;
+    top: 30px;
+    right: 35px;
+    background-color: #242424;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.home-button:hover {
+    background-color: #323232;
+}
+
+/* Slideshow Styling */
+.slideshow-container {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.slideshow-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    transition: transform 0.5s;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}

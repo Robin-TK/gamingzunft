@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GamblingZunft</title>
+
+    <!-- Favicon hinzufügen -->
+    <link rel="icon" href="gazu.jpg" type="image/x-icon">
+
+    <link rel="stylesheet" href="gambling.css">
+</head>
+<body>
+    <div class="container">
+
+        <!-- Header -->
+        <header>
+            <h1>Willkommen in der GamblingZunft!</h1>
+            <p>Casino-Aktivität der GamingZunft, herzlich willkommen!</p>
+         
+            <!-- Home Button -->
+            <a href="index.html" class="home-button box">Zurück zur Startseite</a>
+        </header>
+        
+        <!-- Gemeinsamer Text über den Bildern -->
+        <div class="image-gallery-title">
+            <p>Hier werden Statistiken der GamblingZunft geteilt wie beispielsweise Maxwins, die top Gewinne, die top Spiele und vieles mehr!
+                <br>Für die jeweiligen Stake-Accounts, klicke auf die Icons! Für weitere Statistiken klicke auf den Button "Zu den Statistiken"!</br>
+            </p>
+
+<!-- Container für die Icons -->
+<div class="icon-container">
+    <div class="icon-row">
+        <a href="https://stake.com/de/transactions/other/tipSend?name=m0ses&modal=user" target="_blank" rel="noopener noreferrer">
+            <img src="moses.png" alt="Icon 1" class="icon">
+        </a>
+        <a href="https://stake.com/de/settings/sessions?name=akurobinn&tab=statistics&modal=user" target="_blank" rel="noopener noreferrer">
+            <img src="robin.png" alt="Icon 2" class="icon">
+        </a>
+        <a href="https://stake.com/de/settings/sessions?name=planki&tab=statistics&modal=user" target="_blank" rel="noopener noreferrer">
+            <img src="planki.png" alt="Icon 3" class="icon">
+        </a>
+        <a href="https://stake.com/de/transactions/other/tipSend?name=g4mp1&modal=user" target="_blank" rel="noopener noreferrer">
+            <img src="jonas.png" alt="Icon 4" class="icon">
+        </a>
+        <a href="https://stake.com/de/settings/sessions?name=iwillahus&tab=statistics&modal=user" target="_blank" rel="noopener noreferrer">
+            <img src="Dejan.png" alt="Icon 5" class="icon">
+        </a>
+        <a href="https://stake.com/de/transactions/other/tipSend?name=Schipsli&modal=user" target="_blank" rel="noopener noreferrer">
+            <img src="schips.png" alt="Icon 6" class="icon">
+        </a>
+    </div>
+    <div class="icon-row">
+        <a href="https://stake.com/de/transactions/other/tipSend?name=fabsiano2005&modal=user" target="_blank" rel="noopener noreferrer">
+            <img src="Fabi.png" alt="Icon 7" class="icon">
+        </a>
+        <a href="https://stake.com/de/transactions/other/tipSend?name=Schmortl&modal=user" target="_blank" rel="noopener noreferrer">
+            <img src="schmortl.png" alt="Icon 8" class="icon">
+        </a>
+        <a href="https://stake.com/de" target="_blank" rel="noopener noreferrer">
+            <img src="leks.png" alt="Icon 9" class="icon">
+        </a>
+        <a href="https://stake.com/de" target="_blank" rel="noopener noreferrer">
+            <img src="alex.png" alt="Icon 10" class="icon">
+        </a>
+        <a href="https://stake.com/de/transactions/other/tipSend?page=1&name=Kreizleida&modal=user" target="_blank" rel="noopener noreferrer">
+            <img src="gabs.png" alt="Icon 11" class="icon">
+        </a>
+    </div>
+</div>
+
+            <!-- Scroll Button -->
+            <a href="#image-gallery" class="scroll-button box">Zu den Statistiken</a>
+        </div>
+
+        <!-- Container für die Bilder -->
+        <div class="image-gallery" id="image-gallery">
+            <img src="maxwin.jpg" alt="Bild 1" class="gallery-image">
+            <img src="mostwon.jpg" alt="Bild 2" class="gallery-image">
+            <img src="live.jpg" alt="Bild 3" class="gallery-image">
+            <img src="bw.jpg" alt="Bild 4" class="gallery-image">
+            <img src="bx.jpg" alt="Bild 5" class="gallery-image">
+            <img src="only.jpg" alt="Bild 6" class="gallery-image">
+            <img src="gates.jpg" alt="Bild 7" class="gallery-image">
+            <img src="tombstoneNB.jpg" alt="Bild 8" class="gallery-image">
+        </div>
+
+        <div class="button-container">
+            <a href="https://docs.google.com/spreadsheets/d/1R_6_0D71UPrItbzBEPiE-hrpTw0CFEB4wVRlZBc01zM/edit?gid=0#gid=0" 
+               class="custom-button" 
+               target="_blank" 
+               rel="noopener noreferrer">
+               Link zu allen Gewinnen!
+            </a>
+        </div>
+
+
+        <br>
+        <br>
+        <br>
+
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2025 GamingZunft. Alle Rechte vorbehalten.</p>
+                <a href="impressum.html" class="impressum-link">Impressum</a>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- JavaScript für sanftes Scrollen -->
+    <script>
+        document.querySelector('.scroll-button').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.querySelector('#image-gallery').scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>

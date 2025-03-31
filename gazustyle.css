@@ -1,0 +1,83 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    position: relative; /* Für die Partikel notwendig */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    z-index: 10; /* Buttons sollen vor den Partikeln angezeigt werden */
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.box {
+    width: 180px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    border-radius: 15px;
+    background: #323232;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease; /* Übergang für alle Änderungen */
+}
+
+.box:hover {
+    transform: scale(1.1); /* Skaliert die Box leicht beim Hover */
+    opacity: 0.9;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Partikel (nur zur Darstellung) */
+.particle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    pointer-events: none;
+}
+
+/* Container für Partikel */
+.particle-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Verhindert, dass Partikel auf Klicks reagieren */
+    z-index: 1; /* Stellt sicher, dass die Partikel hinter anderen Inhalten sind */
+}
+
+/* Partikel (kleine weiße, runde Kreise) */
+.particle {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+

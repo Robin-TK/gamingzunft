@@ -1,0 +1,170 @@
+/* Verhindern, dass horizontale Scrollbalken erscheinen */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+/* Stil für den Home-Button */
+.home-button {
+    position: absolute;
+    top: 30px;
+    right: 35px;
+    background-color: #242424;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.home-button:hover {
+    background-color: #323232;
+}
+
+/* Hintergrund */
+body {
+    background: #323232;
+    font-family: 'Roboto', Arial, sans-serif;
+    color: white;
+}
+
+/* Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+/* Header */
+header {
+    background-color: #242424;
+    width: 100%;
+    padding: 20px 20px;
+    box-sizing: border-box;
+}
+
+.image-gallery-title {
+    margin-top: 50px;
+    margin-bottom: 40px;
+    padding: 10px;
+    line-height: 1.6;
+}
+
+/* Container für die Icons */
+.icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+/* Jede Zeile mit Icons */
+.icon-row {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+/* Stil für die Icons */
+.icon {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.icon:hover {
+    transform: scale(1.2);
+}
+
+/* Container für die Bilder */
+.image-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    margin-top: 30px;
+}
+
+.gallery-image {
+    width: 100%;
+    max-width: 1920px;
+    height: auto;
+    margin: 0;
+    display: block;
+}
+
+/* Stil für den neuen Scroll-Button */
+.scroll-button {
+    position: relative;
+    top: 20px;
+    background-color: #242424;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    display: inline-block;
+    transition: background-color 0.3s ease-in-out;
+    margin-bottom: 400px;
+}
+
+.scroll-button:hover {
+    background-color: #323232;
+}
+
+.footer-content {
+    text-align: center;
+    width: 1920px;
+    padding: 20px 0;
+    background-color: #242424;
+    color: white;
+}
+
+
+
+.impressum-link {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.impressum-link:hover {
+    text-decoration: underline;
+    color: #bbbbbb;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.custom-button {
+    background-color: #242424;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+    margin-top: 20px;
+}
+
+.custom-button:hover {
+    background-color: #323232;
+}
+
+
